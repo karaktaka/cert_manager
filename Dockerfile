@@ -14,3 +14,6 @@ RUN apk add --no-cache build-base \
     && chmod +x /usr/local/bin/* \
     && apk del build-base \
     && rm -rf /var/cache/apk/*
+
+ENTRYPOINT ["dehydrated"]
+CMD ["-c"]
