@@ -7,7 +7,7 @@ RUN apk add --update \
     bash \
     curl \
     openssl \
-    && rm -rf /var/cache/apk/* \
+    && rm -rf /var/cache/apk/*
     
 RUN apk add --no-cache build-base \
     && python3 -m pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt \
